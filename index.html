@@ -1,0 +1,24 @@
+    <style>
+        video {
+            width: 80%;
+            height: 80%;
+        }
+    </style>
+    <body onload="setupVideo()">
+        <h1>Adaptive Streaming with HTML5</h1>
+<!--         <video id="videoplayer" controls></video>
+ -->        <video data-dashjs-player="" src="https://varietat.s3.eu-west-1.amazonaws.com/training/Variable+Declarations+(var+vs+let+vs+const)+-+ui.dev.m3u8" controls="true"></video>
+
+    </body>
+    <script src="https://cdn.dashjs.org/v3.1.0/dash.all.min.js"></script>
+    <script>
+        // setup the video element and attach it to the Dash player
+        function setupVideo() {
+           /*  var url = "http://wams.edgesuite.net/media/MPTExpressionData02/BigBuckBunny_1080p24_IYUV_2ch.ism/manifest(format=mpd-time-csf)";
+            var context = new Dash.di.DashContext();
+            var player = new MediaPlayer(context);
+            player.startup();
+            player.attachView(document.querySelector("#videoplayer"));
+            player.attachSource(url); */
+        }
+    </script>
